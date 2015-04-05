@@ -1283,7 +1283,7 @@ class Mission
 		class Item25
 		{
 			position[]={14211.719,19.799335,16260.499};
-			azimut=315;
+			azimut=305.51608;
 			id=78;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
@@ -1294,7 +1294,7 @@ class Mission
 		class Item26
 		{
 			position[]={14209.794,19.758905,16262.395};
-			azimut=135;
+			azimut=126.42056;
 			id=79;
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
@@ -1632,6 +1632,7 @@ class Mission
 			name="Respawn_East";
 			text="Base";
 			type="Empty";
+			colorName="ColorEAST";
 		};
 		class Item1
 		{
