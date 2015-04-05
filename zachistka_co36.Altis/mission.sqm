@@ -128,7 +128,7 @@ class Mission
 				class Item0
 				{
 					presence=0;
-					position[]={14870.763,17.91,16537.604};
+					position[]={14871.376,17.91,16537.809};
 					id=1;
 					side="CIV";
 					vehicle="C_man_1";
@@ -146,7 +146,7 @@ class Mission
 				class Item0
 				{
 					presence=0;
-					position[]={14865.382,17.91,16537.65};
+					position[]={14865.859,17.91,16537.887};
 					id=2;
 					side="EAST";
 					vehicle="O_Soldier_F";
@@ -306,7 +306,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={14860.388,17.903049,16521.898};
+					position[]={14875.292,17.995815,16523.682};
 					azimut=210;
 					id=11;
 					side="LOGIC";
@@ -2190,10 +2190,10 @@ class Mission
 	};
 	class Sensors
 	{
-		items=15;
+		items=14;
 		class Item0
 		{
-			position[]={14868.964,17.91,16541.912};
+			position[]={14868.827,17.91,16542.014};
 			a=0;
 			b=0;
 			timeoutMin=5;
@@ -2246,14 +2246,14 @@ class Mission
 		};
 		class Item3
 		{
-			position[]={14867.3,17.91,16541.848};
+			position[]={14867.197,17.91,16542.018};
 			a=0;
 			b=0;
 			repeating=1;
 			interruptable=1;
 			age="UNKNOWN";
 			text="Check Enemy Stats";
-			expActiv="hint format [""Enemy Units: %1\nEnemy Groups: %2\nAll Groups: %3"", (east countside allunits) + (independent countside allunits), (east countside allgroups) + (independent countside allgroups), count allgroups];";
+			expActiv="hint format [""Enemy Units: %1\nEnemy Groups: %2\nAll Groups: %3"", (west countside allunits) + (independent countside allunits), (west countside allgroups) + (independent countside allgroups), count allgroups];";
 			class Effects
 			{
 			};
@@ -2278,23 +2278,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={14865.812,17.91,16541.854};
-			a=0;
-			b=0;
-			repeating=1;
-			interruptable=1;
-			age="UNKNOWN";
-			text="fatigue";
-			name="fatigue_1";
-			expCond="alive player and (""PARAM_Fatigue"" call BIS_fnc_getParamValue == 0)";
-			expActiv="player enableFatigue false;";
-			class Effects
-			{
-			};
-		};
-		class Item6
-		{
-			position[]={14864.314,17.91,16541.729};
+			position[]={14865.507,17.91,16542.037};
 			a=0;
 			b=0;
 			repeating=1;
@@ -2311,7 +2295,7 @@ class Mission
 			{
 			};
 		};
-		class Item7
+		class Item6
 		{
 			position[]={14779.018,17.91,16855.457};
 			a=0;
@@ -2330,7 +2314,7 @@ class Mission
 			{
 			};
 		};
-		class Item8
+		class Item7
 		{
 			position[]={23150.826,3.1900001,18955.715};
 			a=10;
@@ -2349,7 +2333,7 @@ class Mission
 			{
 			};
 		};
-		class Item9
+		class Item8
 		{
 			position[]={26796.805,22.324099,24619.102};
 			a=10;
@@ -2368,7 +2352,7 @@ class Mission
 			{
 			};
 		};
-		class Item10
+		class Item9
 		{
 			position[]={20975.254,26.350609,7211.2866};
 			a=10;
@@ -2387,7 +2371,7 @@ class Mission
 			{
 			};
 		};
-		class Item11
+		class Item10
 		{
 			position[]={11670.733,22.325058,11818.168};
 			a=10;
@@ -2406,7 +2390,7 @@ class Mission
 			{
 			};
 		};
-		class Item12
+		class Item11
 		{
 			position[]={9236.8252,16.493073,21598.109};
 			a=10;
@@ -2425,7 +2409,7 @@ class Mission
 			{
 			};
 		};
-		class Item13
+		class Item12
 		{
 			position[]={14231.911,17.949003,15850.219};
 			a=10;
@@ -2444,7 +2428,7 @@ class Mission
 			{
 			};
 		};
-		class Item14
+		class Item13
 		{
 			position[]={15173.638,17.91,16815.609};
 			a=10;
