@@ -50,7 +50,7 @@ class PARAM_Enemy
 {
 	title = "    Type of Enemy:";
 	values[] = {2,1,0};
-	texts[] = {"Random","Greek Army","Iranian Army"};
+	texts[] = {"Random","Greek Army","NATO"};
 	default = 0;
 };
 class PARAM_Kavala
