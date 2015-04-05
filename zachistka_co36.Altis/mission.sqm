@@ -82,7 +82,7 @@ class Mission
 	randomSeed=9114063;
 	class Intel
 	{
-		briefingName="Зачистка v4 (ARMATOP]";
+		briefingName="Зачистка v4 (ARMATOP] RU";
 		overviewText="Группа задач в одном районе.";
 		startWind=0;
 		forecastWind=0;
@@ -1629,10 +1629,9 @@ class Mission
 		class Item0
 		{
 			position[]={14187.773,19.58663,16272.253};
-			name="Respawn_West";
+			name="Respawn_East";
 			text="Base";
 			type="Empty";
-			colorName="ColorBLUFOR";
 		};
 		class Item1
 		{
