@@ -17,7 +17,7 @@ _loop = true;
 
 _spawnaa1 = getmarkerpos _x;
 
-_aa1 = createGroup WEST;
+_aa1 = createGroup EAST;
 
 _vaa1 = createVehicle [_aa_type,_spawnaa1, [], 0, "NONE"];
 _vaa1 setdir _dir;
@@ -29,10 +29,10 @@ if !(_damg) then {
 };
 
 if ((_vaa1 emptypositions "Commander") > 0) then {
-	_aaman1 = _aa1 createUnit ["B_crew_F",_spawnaa1, [], 0, "NONE"];
+	_aaman1 = _aa1 createUnit ["O_crew_F",_spawnaa1, [], 0, "NONE"];
 	_aaman1 moveincommander _vaa1;
 };
-_aaman2 = _aa1 createUnit ["B_crew_F", _spawnaa1, [], 0, "NONE"];
+_aaman2 = _aa1 createUnit ["O_crew_F", _spawnaa1, [], 0, "NONE"];
 _aaman2 moveingunner _vaa1;
 _vaa1 lock true;
 
