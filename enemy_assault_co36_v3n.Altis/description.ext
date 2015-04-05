@@ -1,0 +1,83 @@
+author = "Редакция [ATP] TopDen [ARMATOP]"; // Author
+onLoadName = "ЗАЧИСТКА 4.1"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
+onLoadMission = "Заходим на сайт и читаем как играть! Если вы идиот - бан вам гарантирован!"; // Description
+loadScreen = "pics\fon.jpg"; // Preview picture
+overviewText = "Выполнение нескольких задач в одном районе.";
+//overviewPicture = "pics\overview.paa";
+class Header
+{
+  gameType = Coop;
+  minPlayers = 1;
+  maxPlayers = 36;
+};
+
+//enableDebugConsole = 1;
+disableChannels[]={0,2,3,4,5,6,7,8};
+ShowGPS = 1;
+
+class Params
+{
+
+		#include "ghst_params.hpp"
+		//// Respawn Script - Start ////
+		#include "INS_revive\params.hpp"
+		//// Respawn Script - End   ////
+
+};
+
+// description.ext settings for revive
+///////////////////////////////////////////////////////////////////////////////////////////
+Respawn = "INSTANT";
+RespawnDelay = 5;
+RespawnDialog = 0;
+disabledAI = 1;
+
+class RscTitles
+{
+	//// Respawn Script - Start ////
+	#include "INS_revive\rsctitles.hpp"
+	//// Respawn Script - End   ////
+};
+
+#include "functions\dlg\Spawnveh.hpp"
+#include "CHVD\dialog.hpp"
+
+class cfgFunctions {
+	
+	//ghst functions
+	#include "functions\cfgfunctions.hpp"
+	#include "CHVD\CfgFunctions.hpp"
+};
+
+// Comm Menu
+///////////////////////////////////////////////////////////////////////////////////////////
+#include "comm_menu.h"
+#include "R3F_LOG\desc_include.h"
+///////////////////////////////////////////////////////////////////////////////////////////
+//Debrief
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "Good Job Ladies! You made it out alive!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class Fail
+	{
+		title = "Mission Failed";
+		subtitle = "";
+		description = "You all died";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
+
+
+
+
