@@ -16,7 +16,7 @@ for "_i" from 0 to (count _cfgvehicles)-1 do {
 		_wPic =  getText(configFile >> "cfgvehicles" >> _wCName >> "picture");
 		_wDesc = getText(configFile >> "cfgvehicles" >> _wCName >> "Library" >> "libTextDesc");	
 
-		if (((_wCName iskindof "Ship_F") or (_wCName iskindof "Boat_F")) && ((_wside == 1) or (_wside == 2)) && (_wscope == 2) && (_wfaction == "OPF_F") && (_wDName!="") && (_wModel!="") && (_wpic!="")) then {
+		if (((_wCName iskindof "Ship_F") or (_wCName iskindof "Boat_F")) && ((_wside == 1) or (_wside == 2)) && (_wscope == 2) && (_wfaction == "BLU_F") && (_wDName!="") && (_wModel!="") && (_wpic!="")) then {
 			/*
 			if (_wfaction == "USMC") then {
 				_wDName = _wDName + " USMC";
