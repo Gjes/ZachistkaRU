@@ -9,7 +9,7 @@ _null = [] execVM "scripts\misc\clearItemsBASE.sqf";													// clear items 
 
 execVM "R3F_LOG\init.sqf";
 
-CIVILIAN setFriend [WEST, 1];
+CIVILIAN setFriend [EAST, 1];
 WEST setFriend [CIVILIAN, 1];
 EAST setFriend [CIVILIAN, 1];
 INDEPENDENT setFriend [CIVILIAN, 1];
