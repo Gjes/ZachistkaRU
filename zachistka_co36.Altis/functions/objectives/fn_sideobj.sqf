@@ -37,11 +37,11 @@ _enemy_vehicles = (2 + round(random 2));
 
 [_locselpos,[_area_size,_area_size],_enemy_vehicles,_ghst_side,[false,"ColorRed"],(_PARAM_AISkill/10)] call ghst_fnc_evehsentryspawn;
 
-[_locselpos,_area_size2,8,true,false,WEST] call ghst_fnc_civcars;
+[_locselpos,_area_size2,8,true,false,EAST] call ghst_fnc_civcars;
 
 [_locselpos,_area_size2,8,_ghst_side,[false,"ColorBlack"]] call ghst_fnc_mines;
 
-[_locselpos,_area_size2,2,WEST,[false,"ColorRed"]] call ghst_fnc_ieds;
+[_locselpos,_area_size2,2,EAST,[false,"ColorRed"]] call ghst_fnc_ieds;
 
 //Clear Area task
 [_locselpos,[_area_size,_area_size],_locselname,_ghst_side] call ghst_fnc_clear;
