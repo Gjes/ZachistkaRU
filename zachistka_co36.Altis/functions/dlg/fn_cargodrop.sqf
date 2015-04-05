@@ -114,7 +114,7 @@ openMap false;
 
 //hint format ["%1", _pos];
 
-_airdrop1 = createGroup WEST;
+_airdrop1 = createGroup EAST;
 
 _dir = [_spawnmark, _pos] call BIS_fnc_dirTo;
 
@@ -142,7 +142,7 @@ _air1 domove [(_pos select 0) + 200 * sin(_dir),(_pos select 1) + 200 * cos(_dir
 waituntil {(_air1 distance _pos) < (_flyheight + 50)};
 
 _dir = getdir _air1;
-_chute1 = createVehicle ["B_Parachute_02_F",[0,0,0], [], 0, "FLY"];
+_chute1 = createVehicle ["O_Parachute_02_F",[0,0,0], [], 0, "FLY"];
 _chute1 setdir _dir;
 _chute1 setposatl [(getposatl _air1 select 0) - 20 * sin(_dir),(getposatl _air1 select 1) - 20 * cos(_dir),(getposatl _air1 select 2)];
 
