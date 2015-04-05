@@ -43,7 +43,7 @@ case 0: {
 	
 	ghst_commanderlist = ["B_Story_Colonel_F","B_Story_Protagonist_F","B_Story_SF_Captain_F"];
 	
-	ghst_ammobox_list = "Box_East_Ammo_F";
+	ghst_ammobox_list = "Box_NATO_Ammo_F";
 	
 	};
 
