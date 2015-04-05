@@ -28,20 +28,20 @@ _enemy_patrols = (2 + round(random 2));
 _enemy_squadsize = (3 + round(random 3));
 _enemy_vehicles = (2 + round(random 2));
 
-[_locselpos,_area_size,_ghst_side,_enemy_house,[false,"ColorRed"],(_PARAM_AISkill/10),false,false] call ghst_fnc_fillbuild;
+[_locselpos,_area_size,_ghst_side,_enemy_house,[false,"ColorBlue"],(_PARAM_AISkill/10),false,false] call ghst_fnc_fillbuild;
 
 //external scripts to spawn enemy around objective
-[_locselpos,[_area_size,_area_size,(random 360)],_enemy_patrols,_enemy_patrols,_ghst_side,[false,"ColorRed"],(_PARAM_AISkill/10),false] call ghst_fnc_espawn;
+[_locselpos,[_area_size,_area_size,(random 360)],_enemy_patrols,_enemy_patrols,_ghst_side,[false,"ColorBlue"],(_PARAM_AISkill/10),false] call ghst_fnc_espawn;
 
 [_locselpos,_area_size,[false,"Colorblack"],_ghst_side,(_PARAM_AISkill/10)] call ghst_fnc_roofmgs2;
 
-[_locselpos,[_area_size,_area_size],_enemy_vehicles,_ghst_side,[false,"ColorRed"],(_PARAM_AISkill/10)] call ghst_fnc_evehsentryspawn;
+[_locselpos,[_area_size,_area_size],_enemy_vehicles,_ghst_side,[false,"ColorBlue"],(_PARAM_AISkill/10)] call ghst_fnc_evehsentryspawn;
 
-[_locselpos,_area_size2,8,true,false,EAST] call ghst_fnc_civcars;
+[_locselpos,_area_size2,8,true,false,WEST] call ghst_fnc_civcars;
 
 [_locselpos,_area_size2,8,_ghst_side,[false,"ColorBlack"]] call ghst_fnc_mines;
 
-[_locselpos,_area_size2,2,EAST,[false,"ColorRed"]] call ghst_fnc_ieds;
+[_locselpos,_area_size2,2,WEST,[false,"ColorBlue"]] call ghst_fnc_ieds;
 
 //Clear Area task
 [_locselpos,[_area_size,_area_size],_locselname,_ghst_side] call ghst_fnc_clear;
@@ -51,7 +51,7 @@ _buildarray = ["Land_TTowerBig_2_F","Land_TTowerBig_1_F","Land_Communication_F",
 [_locselpos,_area_size2,_buildarray,[200,200],[_enemy_patrols,_enemy_squadsize],_ghst_side,(_PARAM_AISkill/10),[true, _transport_heli_list]] call ghst_fnc_randombuild;
 
 //Create objective area marker
-_mark1 = [_locselpos,"ColorRed","","",[_area_size,_area_size],"Ellipse","Border"] call fnc_ghst_mark_point;
+_mark1 = [_locselpos,"ColorBlue","","",[_area_size,_area_size],"Ellipse","Border"] call fnc_ghst_mark_point;
 
 if (isnil "_locselpos") exitwith {[[1,1,0],1] spawn fnc_ghst_full_cleanup;};
 
