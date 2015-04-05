@@ -13,35 +13,35 @@ case 0: {
 	//Iranian UNITS
 	/////////// "O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_medic_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F"
 	
-	ghst_side = east;
+	ghst_side = west;
 
-	ghst_menlist = ["O_Soldier_SL_F","O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F","O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_Soldier_TL_F","O_soldierU_LAT_F","O_recon_M_F"];
+	ghst_menlist = ["B_Soldier_SL_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_soldier_AT_F","B_soldier_LAT_F","B_soldier_AR_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_Soldier_TL_F","B_soldier_LAT_F","B_recon_M_F"];
 
-	ghst_diverlist = ["O_diver_f","O_diver_exp_f","O_diver_TL_f","O_diver_f","O_diver_exp_f","O_diver_f"];
+	ghst_diverlist = ["B_diver_f","B_diver_exp_f","B_diver_TL_f","B_diver_f","B_diver_exp_f","B_diver_f"];
 	
-	ghst_specopslist = ["O_Soldier_SL_F","O_sniper_F","O_recon_M_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F","I_Soldier_AA_F","I_officer_F","I_Soldier_AR_F","I_Spotter_F","I_Sniper_F"];
+	ghst_specopslist = ["B_Soldier_SL_F","B_sniper_F","B_recon_M_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AT_F","B_soldier_LAT_F","B_soldier_AR_F","I_Soldier_AA_F","I_officer_F","I_Soldier_AR_F","I_Spotter_F","I_Sniper_F"];
 
-	ghst_crewmenlist = ["O_crew_F"];
+	ghst_crewmenlist = ["B_crew_F"];
 	
-	ghst_patrolvehlist = ["I_MRAP_03_gmg_F","O_APC_Wheeled_02_rcws_F","O_APC_Tracked_02_AA_F","O_MBT_02_cannon_F","O_APC_Wheeled_02_rcws_F","O_APC_Tracked_02_cannon_F","I_APC_Wheeled_03_cannon_F","I_MBT_03_cannon_F"];
+	ghst_patrolvehlist = ["I_MRAP_03_gmg_F","B_APC_Wheeled_01_rcws_F","B_APC_Tracked_01_AA_F","B_MBT_01_cannon_F","B_APC_Wheeled_01_rcws_F","B_APC_Tracked_01_cannon_F","I_APC_Wheeled_03_cannon_F","I_MBT_03_cannon_F"];
 
-	ghst_convoyvehlist = ["I_APC_Wheeled_03_cannon_F","O_Truck_03_transport_F","O_MRAP_02_gmg_F","O_Truck_03_covered_F","O_APC_Wheeled_02_rcws_F","I_APC_Wheeled_03_cannon_F","I_APC_Wheeled_03_cannon_F","O_MRAP_02_gmg_F","O_APC_Wheeled_02_rcws_F","I_MBT_03_cannon_F"];
+	ghst_convoyvehlist = ["I_APC_Wheeled_03_cannon_F","B_Truck_01_transport_F","B_MRAP_01_gmg_F","B_Truck_01_covered_F","B_APC_Wheeled_01_rcws_F","I_APC_Wheeled_03_cannon_F","I_APC_Wheeled_03_cannon_F","B_MRAP_01_gmg_F","B_APC_Wheeled_01_rcws_F","I_MBT_03_cannon_F"];
 
-	ghst_staticlist = ["O_HMG_01_high_F","O_Mortar_01_F"];
+	ghst_staticlist = ["B_HMG_01_high_F","B_Mortar_01_F"];
 	
-	ghst_patrolboatlist = ["O_Boat_Armed_01_hmg_F"];
+	ghst_patrolboatlist = ["B_Boat_Armed_01_minigun_F"];
 	
-	ghst_transport_heli_list = "O_Heli_Attack_02_black_F";
+	ghst_transport_heli_list = "B_Heli_Transport_01_camo_F";
 	
-	ghst_attack_heli_list = "O_Heli_Attack_02_black_F";
+	ghst_attack_heli_list = "B_Heli_Attack_01_F";
 	
 	if (_PARAM_SU35 == 0) then {
-	ghst_patrol_air_list = ["O_Plane_CAS_02_F","I_Plane_Fighter_03_AA_F"];
+	ghst_patrol_air_list = ["B_Plane_CAS_01_F","I_Plane_Fighter_03_AA_F"];
 	} else {
-	ghst_patrol_air_list = ["JS_JC_SU35","O_Plane_CAS_02_F"];
+	ghst_patrol_air_list = ["B_Plane_CAS_01_F"];
 	};
 	
-	ghst_commanderlist = ["O_Story_Colonel_F","O_Story_CEO_F","O_officer_F"];
+	ghst_commanderlist = ["B_Story_Colonel_F","B_Story_Protagonist_F","B_Story_SF_Captain_F"];
 	
 	ghst_ammobox_list = "Box_East_Ammo_F";
 	
