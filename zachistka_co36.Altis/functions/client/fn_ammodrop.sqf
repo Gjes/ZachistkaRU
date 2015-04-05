@@ -33,7 +33,7 @@ openMap false;
 
 //hint format ["%1", _pos];
 
-_airdrop1 = createGroup WEST;
+_airdrop1 = createGroup EAST;
 
 _dir = [_spawnmark, _pos] call BIS_fnc_dirTo;
 
