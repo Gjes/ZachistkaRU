@@ -123,19 +123,19 @@ for "_o" from 1 to (_numobjs) do {
 			};
 			case "ZSU_AA":
 			{
-			[_random_pos,_radarray,"O_APC_Tracked_02_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"B_APC_Tracked_01_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ZSU_AA2":
 			{
-			[_random_pos,_radarray,"O_APC_Tracked_02_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"B_APC_Tracked_01_AA_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ARTY":
 			{
-			[_random_pos,_radarray,"O_MBT_02_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"B_MBT_01_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "ARTY2":
 			{
-			[_random_pos,_radarray,"O_MBT_02_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
+			[_random_pos,_radarray,"B_MBT_01_arty_F",true,(_PARAM_AISkill/10),_locselname,[true,"ColorRed",[200,200]],_ghst_side] call ghst_fnc_randomloc;
 			};
 			case "comtower":
 			{
