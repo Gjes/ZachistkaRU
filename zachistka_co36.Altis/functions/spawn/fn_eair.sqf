@@ -17,7 +17,7 @@ _rspawn = _this select 5;//respawn array
 _markunitsarray = _this select 6;
 	_markwps = _markunitsarray select 0;
 	_mcolor = _markunitsarray select 1;
-_ghst_side = [_this, 7, ghst_side,[EAST]] call BIS_fnc_param;//check to see if type is specified otherwise use default unitlist aircraft
+_ghst_side = [_this, 7, ghst_side,[WEST]] call BIS_fnc_param;//check to see if type is specified otherwise use default unitlist aircraft
 _ghst_patrol_air_list = [_this, 8, ghst_patrol_air_list,[[]]] call BIS_fnc_param;//check to see if side is specified otherwise use default unitlist side
 
 _spawnpos = [(_spawnmarker select 0),(_spawnmarker select 1), (_flyheight * 2)];
