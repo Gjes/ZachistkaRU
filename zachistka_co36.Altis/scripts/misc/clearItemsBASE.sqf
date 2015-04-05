@@ -14,7 +14,7 @@ ____________________________________________________________________*/
 
 
 private ["_itemsToClear","_obj","_rad","_delay","_loopTimeout"];
-_obj = getMarkerPos "respawn_west"; 							// base area
+_obj = getMarkerPos "respawn_east"; 							// base area
 _rad = 300;  													// radius outwards from center point to clear items.
 _delay = 600;  													// default 600, or should be done after each AO?
 _loopTimeout = 10 + (random 10);								// default 300 or 600? greater time = less costly loop?
@@ -29,7 +29,7 @@ while { true } do {
 	
 		//---------- BRIEF
 
-		hqSideChat = "Clearing items around base ..."; publicVariable "hqSideChat"; [WEST,"HQ"] sideChat hqSideChat;
+		hqSideChat = "Clearing items around base ..."; publicVariable "hqSideChat"; [EAST,"HQ"] sideChat hqSideChat;
 
 		sleep 5;
 
@@ -44,14 +44,14 @@ while { true } do {
 	
 		//---------- DE-BRIEF
 	
-		hqSideChat = "Maintenance cycle complete. Unavailable for several minutes."; publicVariable "hqSideChat"; [WEST,"HQ"] sideChat hqSideChat;
+		hqSideChat = "Maintenance cycle complete. Unavailable for several minutes."; publicVariable "hqSideChat"; [EAST,"HQ"] sideChat hqSideChat;
 	
 		sleep _delay;
 	
 		//---------- RESET
 	
 		CLEARITEMSBASE_SWITCH = false; publicVariable "CLEARITEMSBASE_SWITCH";
-		hqSideChat = "Maintenance cycle available."; publicVariable "hqSideChat"; [WEST,"HQ"] sideChat hqSideChat;
+		hqSideChat = "Maintenance cycle available."; publicVariable "hqSideChat"; [EAST,"HQ"] sideChat hqSideChat;
 
 	};
 	
