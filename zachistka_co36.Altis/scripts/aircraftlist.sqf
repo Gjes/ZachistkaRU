@@ -20,7 +20,7 @@ for "_i" from 0 to (count _cfgvehicles)-1 do {
 		_wPic =  getText(configFile >> "cfgvehicles" >> _wCName >> "picture");
 		_wDesc = getText(configFile >> "cfgvehicles" >> _wCName >> "Library" >> "libTextDesc");	
 
-		if (((_wCName iskindof "Helicopter_Base_F") or (_wCName iskindof "Plane_Base_F")) && ((_wside == 1) or (_wside == 2)) && (_wscope == 2) && ((_wfaction == "BLU_F") or (_wfaction == "IND_F")) && (_wDName!="") && !(_wCName iskindof "ParachuteBase") && !(_wCName iskindof "UAV_01_base_F") && (_wModel!="") && (_wpic!="")) then {
+		if (((_wCName iskindof "Helicopter_Base_F") or (_wCName iskindof "Plane_Base_F")) && ((_wside == 1) or (_wside == 2)) && (_wscope == 2) && ((_wfaction == "OPF_F") or (_wfaction == "IND_F")) && (_wDName!="") && !(_wCName iskindof "ParachuteBase") && !(_wCName iskindof "UAV_01_base_F") && (_wModel!="") && (_wpic!="")) then {
 			/*
 			if (_wfaction == "USMC") then {
 				_wDName = _wDName + " USMC";
