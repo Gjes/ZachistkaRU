@@ -36,7 +36,7 @@ sleep 1;
 
 openMap false;
 
-_wGrp = createGroup WEST;
+_wGrp = createGroup EAST;
 _dir = [_spawnmark, _pos] call BIS_fnc_dirTo;
 
 _air1_array = [_spawnmark, _dir, _type, _wGrp] call BIS_fnc_spawnVehicle;
