@@ -31,7 +31,7 @@ openMap false;
 
 _dir = [_spawnmark, _pos] call BIS_fnc_dirTo;
 
-_air1_array = [_spawnmark, _dir, _type, WEST] call BIS_fnc_spawnVehicle;
+_air1_array = [_spawnmark, _dir, _type, EAST] call BIS_fnc_spawnVehicle;
 
 _air1 = _air1_array select 0;
 _wGrp = _air1_array select 2;
