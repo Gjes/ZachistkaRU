@@ -13,7 +13,7 @@ case 0: {
 	//Iranian UNITS
 	/////////// "O_sniper_F","O_recon_M_F","O_recon_exp_F","O_recon_medic_F","O_recon_LAT_F","O_recon_TL_F","O_soldierU_AA_F","O_soldierU_AT_F","O_soldierU_LAT_F","O_soldierU_AR_F"
 	
-	ghst_side = west;
+	ghst_side = WEST;
 
 	ghst_menlist = ["B_Soldier_SL_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_soldier_AT_F","B_soldier_LAT_F","B_soldier_AR_F","B_sniper_F","B_recon_M_F","B_recon_exp_F","B_recon_LAT_F","B_recon_TL_F","B_soldier_AA_F","B_Soldier_TL_F","B_soldier_LAT_F","B_recon_M_F"];
 
