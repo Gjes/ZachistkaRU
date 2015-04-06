@@ -34,7 +34,7 @@ _dir = [_spawnmark, _pos] call BIS_fnc_dirTo;
 _chute1 = createVehicle ["B_Parachute_02_F",[0,0,0], [], 0, "FLY"];
 _chute1 setpos [(_pos select 0), (_pos select 1), 150]; 
 
-_ugv1_array = [_spawnmark, _dir, _type, WEST] call BIS_fnc_spawnVehicle;
+_ugv1_array = [_spawnmark, _dir, _type, EAST] call BIS_fnc_spawnVehicle;
 
 _ugv1 = _ugv1_array select 0;
 
