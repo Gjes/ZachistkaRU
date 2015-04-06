@@ -77,14 +77,14 @@ for "_o" from 1 to (_numobjs) do {
 			case "rescue":
 			{
 			private ["_powarray","_powsel"];
-			_powarray = ["C_scientist_F","B_Helipilot_F","B_officer_F","B_Pilot_F"];//"C_scientist_F","B_Helipilot_F","B_officer_F"
+			_powarray = ["C_scientist_F","O_Helipilot_F","O_officer_F","O_Pilot_F"];//"C_scientist_F","B_Helipilot_F","B_officer_F"
 			_powsel = _powarray call BIS_fnc_selectRandom;
 			[_random_pos,_radarray,_campmark,_powsel,_locselname] call ghst_fnc_rescue;
 			};
 			case "rescue2":
 			{
 			private ["_powarray","_powsel"];
-			_powarray = ["C_journalist_F","B_Helipilot_F","B_officer_F","B_Pilot_F"];//"C_journalist_F","B_Helipilot_F","B_officer_F"
+			_powarray = ["C_journalist_F","O_Helipilot_F","O_officer_F","O_Pilot_F"];//"C_journalist_F","B_Helipilot_F","B_officer_F"
 			_powsel = _powarray call BIS_fnc_selectRandom;
 			[_random_pos,_radarray,_campmark,_powsel,_locselname] call ghst_fnc_rescue;
 			};
