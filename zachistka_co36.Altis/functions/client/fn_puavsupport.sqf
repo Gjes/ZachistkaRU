@@ -13,7 +13,7 @@ _dir = getdir player;
 _pos = [player, 2, _dir] call BIS_fnc_relPos;
 
 player playActionNow "PutDown";
-_air1_array = [[_pos select 0, _pos select 1, 1], _dir, _type, WEST] call BIS_fnc_spawnVehicle;
+_air1_array = [[_pos select 0, _pos select 1, 1], _dir, _type, EAST] call BIS_fnc_spawnVehicle;
 
 _air1 = _air1_array select 0;
 _wGrp = _air1_array select 2;
