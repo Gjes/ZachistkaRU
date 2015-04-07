@@ -1,4 +1,4 @@
-author = "Редакция [ATP] TopDen [ARMATOP]"; // Author
+﻿author = "Редакция [ATP] TopDen [ARMATOP]"; // Author
 onLoadName = "ЗАЧИСТКА 4.1"; // Mission name (temporary solution; actual name set in editor will be used later in the alpha)
 onLoadMission = "Заходим на сайт и читаем как играть! Если вы идиот - бан вам гарантирован!"; // Description
 loadScreen = "pics\fon.jpg"; // Preview picture
@@ -11,6 +11,7 @@ class Header
   maxPlayers = 36;
 };
 
+//проверка
 //enableDebugConsole = 1;
 disableChannels[]={0,2,3,4,5,6,7,8};
 ShowGPS = 1;
