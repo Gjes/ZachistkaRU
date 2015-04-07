@@ -65,7 +65,7 @@ class PARAM_Fatigue
 	title = "    Player Fatigue:";
 	values[] = {1,0};
 	texts[] = {"ON","OFF"};
-	default = 0;
+	default = 1;
 };
 class PARAM_PlayerVehicles
 {
