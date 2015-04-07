@@ -342,7 +342,7 @@ fnc_ghst_full_cleanup = {
 	//{if ((faction _x == "IND_F") or (faction _x == "OPF_F") or (faction _x == "CIV_F")) then {deletevehicle _x;};} foreach (_objmark nearObjects ["ALL", _rad]);
 	{deletevehicle _x;} foreach (_objmark nearObjects ["ALL", _rad]);
 
-	{if (((side _x == east) or (side _x == independent)) and !(vehicle _x isKindOf "Plane_Base_F")) then {deletevehicle _x;};} foreach allunits;
+	{if (((side _x == west) or (side _x == independent)) and !(vehicle _x isKindOf "Plane_Base_F")) then {deletevehicle _x;};} foreach allunits;
 
 	{if !(alive _x) then {deletevehicle _x;};} foreach vehicles;
 
